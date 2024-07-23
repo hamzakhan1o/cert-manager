@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: nginx-cert
+  namespace: default
+spec:
+  secretName: nginx-cert-secret
+  commonName: nginx.local
+  dnsNames:
+    - nginx.local
+  issuerRef:
+    name: selfsigned-issuer
+    kind: ClusterIssuer

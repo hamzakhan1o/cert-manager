@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-tls-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-tls
+  template:
+    metadata:
+      labels:
+        app: nginx-tls
+    spec:
+      containers:
+      - name: nginx-tls
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+
