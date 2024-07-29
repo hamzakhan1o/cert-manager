@@ -1,5 +1,6 @@
 # cert-manager
 cert manager with kubernetes using self signed certificate and nginx ingress controller 
+Documentation Link: https://docs.google.com/document/d/1D_l5NWrKQHbZOgqgD9M-EiTnzKSkel9WvieFkFO-qKQ/edit?usp=sharing
 
 Steps 
 
